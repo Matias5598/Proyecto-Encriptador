@@ -1,6 +1,5 @@
-
 body{
-    background-color: lightsalmon;
+    background-color: lightslategrey;
 }
 
 .logo{
@@ -15,14 +14,13 @@ body{
     top: 16%;
     width: 40%;
     height: 5%;
-
-    background-color: blueviolet;
     padding: 15px;
 }
 
 
 .campo-texto{
     position: relative;
+    width: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -36,50 +34,58 @@ body{
 
 .campo-texto::placeholder{color: #0A3871;}
 
-.caja-botones{
-    display: inline;
-    width: 100%;
+.info{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+    
+    color: #0A3871;
+
     position: absolute;
-    top: 83%;
+    top: 81%;
+    left: 18%;
+}
+
+.caja-botones{
+    display: flex;
     padding: 10px;
+    position: absolute;
+    width: 80%;
+    top: 86%;
+    left: 17%;
+    gap: 2%;
+}
+
+.caja-botones input{
+    text-align: center;
+    padding: 24px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .boton-encriptar{
-    position: relative;
-    display: inline-block;
-    padding: 24px;
-    left: 16%;
+
     width: 23%;
     height: 7%;
 
     /* Dark blue/dark-blue-300 */
-    color: white;
+    color: #fefefe;
     background: #0A3871;
     border-radius: 24px;
 
-    /*Font*/
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
-
-}
-
-.boton-encriptar:hover{
-    outline: darkorange solid;
 }
 
 .boton-desencriptar{
-    /* Button */
-    display: inline-block;
-    position: relative;
+    box-sizing: border-box;
+
     width: 23%;
     height: 7%;
-    padding: 24px;
-    left: 17%;
+
     /* Light gray */
 
     background: #D8DFE8;
@@ -88,38 +94,20 @@ body{
     border: 1px solid #0A3871;
     border-radius: 24px;
 
-    /*Font*/
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
 }
 
-.boton-desencriptar:hover{
+.caja-botones input:hover{
     outline: darkorange solid;
 }
 
-.info{
-    position: absolute;
-    display: inline;
-    width: 100%;
-    top: 81%;
-    color: gray;
+.caja-botones input:active{
+    transform: scale(0.98);
 }
 
-.info img, p{
-    position: relative;
-    display: inline;
-    margin-left: 8px;
-    left: 16%;
-}
+
 
 .area-resultado{
-    text-align: center;
-    display: inline-block;
+    
     position: absolute;
     width: 28%;
     height: 92%;
@@ -133,48 +121,46 @@ body{
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+
+    /*Contenido*/
+    text-align: center;
+
 }
 
-.area-result-contenido{
+.imagen-muñeco{
+    margin: 50% 0 0 0;
+}
+
+.caja-info-resultados{
+    text-align: center;
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    gap: 2%;
+
     position: absolute;
-    top: 25%;
+    top: 60%;
+    left: 69%;
+
+    background-color: whitesmoke;
 }
 
-.area-result-contenido img{
-    margin: 15px;
+
+
+#mensaje1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
 }
 
-@media screen and (max-width:820px) {
-
-    .caja-ingreso-texto{
-        display: block;
-        width: 100%;
-        left: 0%;
-    }
-
-    .campo-texto{
-        width: 100%;
-    }
-
-    .caja-botones{
-        display: block;
-        width: 100%;
-        background-color: slategray;
-        top: 70%;
-    }
-
-    .area-resultado{
-        display: block;
-        width: 100%;
-        height: 25%;
-        top: 90%;
-        left: 0%;
-        border-radius: 0;
-
-    }
-
-    .imagen-muñeco{
-        display: none;
-    }
-
+#mensaje2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
 }
