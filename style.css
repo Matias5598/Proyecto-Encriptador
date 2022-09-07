@@ -1,5 +1,5 @@
 body{
-    background-color: lightslategrey;
+    background-color: rgba(211, 117, 117, 0.959);
 }
 
 .logo{
@@ -92,17 +92,19 @@ body{
 }
 
 .caja-botones input:hover{
-    outline: darkorange solid;
+    box-shadow: 10px 10px 0 black;
+    transition: 0.9s;
 }
 
 .caja-botones input:active{
-    transform: scale(0.98);
+    transform: scale(0.9);
+    transition: 0s;
 }
 
 
 
 .area-resultado{
-
+    
     width: 28%;
     height: 92%;
     
@@ -112,7 +114,7 @@ body{
 
     /* White */
 
-    background: #fefefe;
+    background: #D8DFE8;
     /* shadow */
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -121,6 +123,11 @@ body{
     /*Contenido*/
     text-align: center;
 
+}
+
+.area-resultado:hover{
+    box-shadow: 10px 10px 0 black;
+    transition: 0.95s;
 }
 
 .resultado-1{
@@ -180,15 +187,16 @@ body{
 
 #boton-copiar{
     width: 90%;
-    padding: 7%;
+    padding: 6.5%;
     border: 1px solid #0A3871;
     border-radius: 24px;
 }
 
 #boton-copiar:hover{
-    outline: darkorange solid;
+    border: darkorange solid;
 }
 
 #boton-copiar:active{
     transform: scale(0.98);
+    
 }
