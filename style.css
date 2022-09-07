@@ -50,28 +50,23 @@ body{
 }
 
 .caja-botones{
-    display: flex;
-    padding: 10px;
+    display: inline-block;
     position: absolute;
+    padding: 10px;
     width: 80%;
     top: 86%;
     left: 17%;
-    gap: 2%;
 }
 
 .caja-botones input{
     text-align: center;
     padding: 24px;
-    /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .boton-encriptar{
 
-    width: 23%;
+    width: 30%;
     height: 7%;
 
     /* Dark blue/dark-blue-300 */
@@ -82,9 +77,8 @@ body{
 }
 
 .boton-desencriptar{
-    box-sizing: border-box;
 
-    width: 23%;
+    width: 30%;
     height: 7%;
 
     /* Light gray */
@@ -105,35 +99,16 @@ body{
     transform: scale(0.98);
 }
 
-.texto-resultado{
-    position: absolute;
-    width: 24%;
-    height: 76%;
-    left: 72%;
-    top: 7%;
-    z-index: 1;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    /* or 36px */
 
-
-    /* Gray/gray-400 */
-
-    color: #495057;
-
-}
 
 .area-resultado{
-    
-    position: absolute;
+
     width: 28%;
     height: 92%;
+    
+    position: absolute;
     left: 69%;
     top: 3%;
-    z-index: 0.8;
 
     /* White */
 
@@ -148,27 +123,12 @@ body{
 
 }
 
-.imagen-muñeco{
-    margin: 50% 0 0 0;
-}
-
-.caja-info-resultados{
+.resultado-1{
     text-align: center;
-    display: flex;
-    width: 23%;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2%;
-    gap: 2%;
-
     position: absolute;
-    top: 60%;
-    left: 69%;
+    top: 25%;
 
-    background-color: whitesmoke;
 }
-
-
 
 #mensaje1{
     font-family: 'Inter';
@@ -184,4 +144,51 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+}
+
+.resultado-2{
+    position: absolute;
+    top: 3%;
+    height: 95%;
+    width: 100%;
+
+    visibility: hidden;
+}
+
+
+.mensaje-resultado{
+    position: relative;
+    height: 90%;
+    margin-bottom: 5%;
+}
+
+#resultado{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #495057;
+    border: none;
+}
+
+.caja-boton-copiar{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#boton-copiar{
+    width: 90%;
+    padding: 7%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+#boton-copiar:hover{
+    outline: darkorange solid;
+}
+
+#boton-copiar:active{
+    transform: scale(0.98);
 }

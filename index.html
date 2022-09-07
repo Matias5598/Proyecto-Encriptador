@@ -28,18 +28,25 @@
             <input type="button" value="Encriptar" class="boton-encriptar" id="boton-encriptar" >
             <input type="button" value="Desencriptar" class="boton-desencriptar" id="boton-desencriptar">
         </div>
-        <div class="texto-resultado">
-            <p id="resultado"></p>
-        </div>
-        <div class="area-resultado" id="area-resultado">
-            <img src="vectores/Muñeco.svg" alt="imagen-muñeco" class="imagen-muñeco" id="imagen-muñeco">
-        </div>   
 
-        <div class="caja-info-resultados" id="caja-info-resultados">
-            <p id="mensaje1">Ningún mensaje fue encontrado</p>
-            <p id="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-        
+        <div class="area-resultado">
+            <div class="resultado-1" id="resultado-1">
+                <div class="caja-muñeco">
+                    <img src="vectores/Muñeco.svg" alt="imagen-muñeco" id="imagen-muñeco">
+                </div>
+                <div class="info-no-texto">
+                    <p id="mensaje1">Ningún mensaje fue encontrado</p>
+                    <p id="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="resultado-2" id="resultado-2">
+                <div class="mensaje-resultado">
+                    <textarea id="resultado" cols="20" rows="10" readonly ></textarea>
+                </div>
+                <div class="caja-boton-copiar">
+                    <input type="button" value="Copiar" id="boton-copiar">
+                </div>
+            </div>
         </div>
     </main>
 
